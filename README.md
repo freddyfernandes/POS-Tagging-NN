@@ -1,45 +1,54 @@
-# POS-Tagging-NN
 # Part-of-Speech Tagging with Neural Networks
 
-## Overview
-This project explores the development and evaluation of neural network models for part-of-speech (POS) tagging, leveraging a dependency treebank dataset. It highlights the process from data preparation to model evaluation, with a focus on addressing common NLP challenges such as out-of-vocabulary (OOV) tokens.
+## Project Overview
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Models](#models)
-- [Results](#results)
-- [Future Directions](#future-directions)
-- [Contributors](#contributors)
-- [References](#references)
+This GitHub repository uses a dependency treebank dataset to implement and evaluate neural network models designed for part-of-speech (POS) tagging. The project explores the process from data preparation to the development of different neural network models, and ultimately their evaluation. The models leverage pre-trained GloVe embeddings to enhance their performance.
 
-## Features
-- Implementation of neural network models for POS tagging
-- Management of OOV tokens with innovative approaches
-- Utilization of pre-trained GloVe embeddings for enhanced model performance
-- Detailed performance analysis using precision, recall, and F1-score
+## Team Members
+
+- Mirco Lescart
+- Freddy Fernandes
+- Parsa Mastouri Kashani
+- Arina Sadeghi Khiabanian
+
+## Requirements
+
+To run this project, you need Python 3. x along with the following libraries:
+- pandas
+- NumPy
+- Keras
+- matplotlib
+- sklearn
+- gensim
+
+## Dataset
+
+The dataset consists of words and their corresponding part-of-speech tags, extracted from the dependency treebank. It has been preprocessed to fit the requirements of neural network training, including length normalization and tokenization.
 
 ## Models
-- Baseline Model: A bidirectional LSTM network, enhanced with an additional dense layer for context understanding.
-- Model 1: Extends the baseline by incorporating an extra LSTM layer, aiming at improved sequential data learning.
-- Model 2: Introduces an additional dense layer to capture complex patterns, showing superior performance.
+
+Three distinct models have been implemented and tested:
+
+- **Baseline Model**: A bidirectional LSTM network enhanced with an extra dense layer for better contextual understanding.
+- **Model 1**: Adds another LSTM layer to improve sequential data learning.
+- **Model 2**: Incorporates an additional dense layer to capture complex patterns more effectively.
+
+## Setup and Execution
+
+1. Clone the repository.
+2. Ensure you have all the required libraries installed in your Python environment.
+3. Run the Jupyter Notebook `Assignment 1.ipynb` to train the models and evaluate their performance.
 
 ## Results
-Model evaluation reveals that Model 2 consistently achieves high F1-scores, outperforming other configurations. Detailed results and analysis are available in the results directory.
 
-## Future Directions
-Further refinement of the existing models to improve accuracy
-Exploration of more sophisticated neural network architectures
-Expansion of the dataset to include more diverse linguistic structures
-## Contributors
-Mirco Lescart
-Freddy Fernandes
-Parsa Mastouri Kashani
-Arina Sadeghi Khiabanian
+The models were evaluated based on their validation accuracy, precision, recall, and F1 scores. Model 2 showed the highest F1 scores across the majority of POS tags, indicating its superior performance in POS tagging tasks.
+
+## Conclusion
+
+The project demonstrates the effectiveness of using neural networks for POS tagging, highlighting the impact of architectural choices on model performance. Model 2, with its additional dense layer, was identified as the best-performing model, suggesting that deeper architectures can capture the complexities of natural language more efficiently.
+
+For further details, please refer to the project report included in this repository.
+
 ## References
-- Journal of Big Data Article on POS Tagging
-- GloVe: Global Vectors for Word Representation
-- Handling OOV Words in NLP
-- StatQuest for Statistical Understanding
+
+Links to references and further reading are included in the project report.
