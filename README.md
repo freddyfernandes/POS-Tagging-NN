@@ -5,13 +5,6 @@
 This project uses a dependency treebank dataset to implement and evaluate neural network models designed for part-of-speech (POS) tagging. 
 The project explores the process from data preparation to the development of different neural network models, and ultimately their evaluation. The models leverage pre-trained GloVe embeddings to enhance their performance.
 
-## Team Members
-
-- Mirco Lescart
-- Freddy Fernandes
-- Parsa Mastouri Kashani
-- Arina Sadeghi Khiabanian
-
 ## Requirements
 
 To run this project, you need Python 3. x along with the following libraries:
